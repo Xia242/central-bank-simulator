@@ -21,4 +21,6 @@ A real-time Monetary Policy Dashboard where you act as the central bank chair. B
 5. Survive as many quarters as possible!
 
 ## 🚀 Quick Start
-Simply download or clone this repository and open `index.html` in any modern web browser. No build steps, Node.js, or server setup required.
+Simply download or clone this repository and open `index.html` in any modern web browser (keep `simulator.js` alongside it). No build steps, Node.js, or server setup required.
+## Validation
+Run `node --test tests/*.cjs` with Node.js 20 or newer. The economic engine and PID controller run at a fixed 60 Hz, independent of the screen refresh rate. Charts start at Q0 and keep the last 100 actual samples. Background-tab delays are capped to pause rather than fast-forward gameplay.
